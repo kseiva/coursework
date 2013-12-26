@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Web-риложения. Курсовой проект. Вариант 3</title>
+		<meta name="viewport" content="width=1024" />
+
+		<link rel="stylesheet" href="/static/styles.css" media="all" />
+		<link rel="stylesheet" href="/static/ppgallery.css" media="all" />
+		<link rel="stylesheet" href="/static/dark-hive/dark.css" media="all" />
+
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+		<script src='/static/ppgallery.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('#lists').ppGallery({ maxWidth : 700 });
+			});
+		</script>
+	</head>
+	<body>
+		<div class="content">
+			<div class="align-center">
+				<a href="/gallery/">Добавить фотографию</a>
+			</div>
+			<ul id="lists">
+				{% for item in lists %}
+					<li>
+						<a href="/{{ item.original.url }}" title="{{ item.title }}" class="item">
+							<img src="/{{ item.preview }}" />
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Web-риложения. Курсовой проект. Вариант 3</title>
+		<meta name="viewport" content="width=1024" />
+
+		<link rel="stylesheet" href="/static/styles.css" media="all" />
+
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
+	</head>
+	<body>
+		<div class="content">
+			<h1>Добавление фотографии в галерею</h1>
+			<form id="upload" action="" method="post" enctype="multipart/form-data">
+				{% csrf_token %}
+				<input type="text" name="title" placeholder="Название фотографии" />
+				<input type="file" name="image" />
+
+				<div class="align-right">
+					<input type="submit" value="Добавить в галерею" />
+				</div>
+
+				<div class="align-center">
+					<a href="/gallery/lists">Посмотреть загруженные фотографии</a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
