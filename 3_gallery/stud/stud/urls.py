@@ -5,7 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-		url(r'^gallery/$', 'gallery.views.upload'),
+		url(r'^gallery$', 'gallery.views.upload'),
 		url(r'^gallery/lists$', 'gallery.views.lists'),
 )
 

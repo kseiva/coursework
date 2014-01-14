@@ -1,25 +1,12 @@
-/* Zeroing CSS and general */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, em, img, strong, sub, sup, b, u, i, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-	font: inherit;
-	font-size: 100%;
-}
 
 body {
-	overflow-x: hidden;
-	background: #4c6d8e;
-	color: #000000;
-}
-
-body * {
-	font: 13px Tahoma, sans-serif;
+	background: #c0c0c0;
+	color: #c0c0c0;
+	font: 14px Arial, sans-serif;
 }
 
 a {
-	color: #002238;
+	color: #0000ff;
 	text-decoration: underline;
 }
 
@@ -27,12 +14,8 @@ a:hover {
 	text-decoration: none;
 }
 
-strong, b {
+strong {
 	font-weight: bold;
-}
-
-em, i {
-	font-style: italic;
 }
 
 u {
@@ -43,23 +26,17 @@ p {
 	padding-bottom: 15px;
 }
 
-ul, ol {
+ul {
 	margin: 0 0 15px 40px;
 	padding: 0;
 }
 
-h1, h2, h3 {
-	padding-bottom: 15px;
-}
-
 h1 {
-	font-size: 21px;
+	text-align:center;
+	font-size: 20px;
 	text-transform: uppercase;
-	color: #002238;
-}
-
-h4 {
-	font-weight: bold;
+	color: #0000ff;
+	padding-bottom: 15px;
 }
 
 select {
@@ -93,8 +70,6 @@ select {
 	background: #ffffff;
 }
 
-
-/* Upload */
 #upload {
 	margin: auto;
 	width: 50%;
@@ -110,7 +85,7 @@ select {
 #upload input[type="submit"] {
 	cursor: pointer;
 	padding: 7px 20px;
-	background: #002238;
+	background: #0000ff;
 	border: 0;
 	text-decoration: none;
 	font-size: 13px;
@@ -126,8 +101,6 @@ select {
 	padding: 30px 0 10px;
 }
 
-
-/* Lists */
 #lists {
 	display: block;
 	list-style-type: none;
